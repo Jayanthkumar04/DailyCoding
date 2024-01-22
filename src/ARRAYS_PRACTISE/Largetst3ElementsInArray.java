@@ -30,12 +30,9 @@ public class Largetst3ElementsInArray {
 				ans[i]=arr[i];
 			}
 			
-		}
-		else
-		{
+		}else{
 			
-		for(int i=0;i<3;i++)
-		{
+		for(int i=0;i<3;i++){
 		
 			ans[i]=max(arr);
 			
