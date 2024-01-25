@@ -18,7 +18,7 @@ public class CharAlphaOrNot {
 		}
 		else
 		{
-			System.out.println("not a character");
+			System.out.println("not a alphabet");
 		}
 		
 	}
