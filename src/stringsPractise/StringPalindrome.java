@@ -4,7 +4,7 @@ public class StringPalindrome {
 
 	public static void main(String[] args) {
 
-		String s ="malala";
+		String s ="malayalam";
 		
 		char ch[] = s.toCharArray();
 		
