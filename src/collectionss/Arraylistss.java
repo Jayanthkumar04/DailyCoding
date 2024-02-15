@@ -57,6 +57,8 @@ public class Arraylistss {
 		
 		al2.removeAll(al2);
 		System.out.println((al2));
+	
+	
 	}
 
 }

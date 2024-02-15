@@ -17,7 +17,7 @@ public class FactorialOfLargeNumber {
 		{
 			if(i * arr[0] < 9)
 			{
-				arr
+//				arr
 			}
 		}
 		

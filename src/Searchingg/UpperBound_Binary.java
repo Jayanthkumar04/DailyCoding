@@ -35,7 +35,7 @@ public class UpperBound_Binary {
 		int arr[]= {10,20,30,30,40,50,60,70};
 		
 		
-		int index = upperBound(arr,10);
+		int index = upperBound(arr,55);
 		
 	
 		System.out.println(index);
