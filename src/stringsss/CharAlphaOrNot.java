@@ -1,5 +1,7 @@
 package stringsss;
 
+
+
 import java.util.Scanner;
 
 public class CharAlphaOrNot {
@@ -20,6 +22,7 @@ public class CharAlphaOrNot {
 		{
 			System.out.println("not a alphabet");
 		}
+		
 		
 	}
 

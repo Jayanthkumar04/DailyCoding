@@ -5,7 +5,9 @@ public class UserDefinedException2 extends Exception {
 	
 	public UserDefinedException2(String mess)
 	{
+		
 		super(mess);
+	
 	}
 	public static void main(String[] args) {
 
@@ -24,10 +26,14 @@ public class UserDefinedException2 extends Exception {
 			System.out.println("ur eligible to vote vote to me");
 		}
 		
+		
+		
 		catch(UserDefinedException2 ue)
 		{
 			System.out.println(ue.getMessage());
 		}
+		
+		
 		
 	}
 

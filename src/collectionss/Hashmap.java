@@ -104,6 +104,69 @@ public class Hashmap {
 		}
 		
 		
+		HashMap<Character,Integer> q=new HashMap<>();
+		
+		q.put('a', 2);
+		
+		q.put('b', 3);
+		
+		q.put('c', 2);
+		
+		System.out.println(q);
+		
+		System.out.println(q.get('c'));
+		
+		System.out.println(q.keySet());
+		
+		for(Object i:q.keySet())
+		{
+			
+			System.out.println(i+"---"+q.get(i));
+		}
+		
+		System.out.println(q.containsKey('d'));
+		
+		System.out.println(q.containsValue(2));
+		
+		q.remove('a');
+		
+		System.out.println(q);
+		
+		System.out.println(q.values());
+		
+		System.out.println(q.entrySet());
+		
+		for(Map.Entry entry:q.entrySet())
+		{
+			System.out.println(entry.getKey()+"  "+entry.getValue());
+		}
+		
+		
+		Set ss = q.entrySet();
+		
+		Iterator itr4 =s.iterator();
+		
+		while(itr4.hasNext())
+		{
+			Map.Entry en = (java.util.Map.Entry)itr4.next();
+			
+			
+			
+			System.out.println(en.getKey()+"---=>>>"+en.getValue());
+		}
+		
+		while(itr4.hasNext())
+		{
+			
+			
+			Map.Entry en =(java.util.Map.Entry)itr4.next();
+			
+			
+			System.out.println();
+		}
+		
+		
+		
 		
 	}
 
