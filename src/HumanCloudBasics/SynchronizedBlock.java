@@ -41,13 +41,14 @@ class Hall implements Runnable
 			
 			System.out.println(name+" entered the hall");
 			
-			t.sleep(3000);
+			t.sleep(2000);
 			
 			System.out.println(name+" staying in the hall");
 			
-            t.sleep(3000);
+            t.sleep(2000);
 			
 			System.out.println(name+" exited the hall");
+			t.sleep(2000);
 			
 		}
 		catch(Exception e)

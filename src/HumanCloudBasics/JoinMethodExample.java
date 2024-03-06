@@ -77,7 +77,7 @@ public class JoinMethodExample {
 		
 		Officer o = new Officer();
 		
-		Test t = new Test();
+		Test    t = new Test();
 		
 		
 		
