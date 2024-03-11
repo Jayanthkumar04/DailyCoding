@@ -84,6 +84,45 @@ public class HashMapPractise {
 			
 		}
 		
+		System.out.println("new hashmap");
+		HashMap<Integer,String> hm0 = new HashMap<>();
+		
+		hm0.put(1, "parents");
+		
+		hm0.put(2, "sister");
+		
+		hm0.put(3, "god");
+		
+		hm0.put(4, "relatives");
+		
+		hm0.put(5, "friends");
+		
+		System.out.println(hm0);
+		
+		System.out.println(hm0.keySet());
+		
+		System.out.println(hm0.values());
+		
+		System.out.println(hm0.containsKey("god"));
+		
+		System.out.println(hm0.containsValue("god"));
+		
+	    System.out.println(hm0.entrySet());
+	    
+	    
+	    for(Object i : hm0.keySet())
+	    {
+	    	System.out.println(i+"--->"+hm0.get(i));
+	    }
+	    System.out.println();
+	    System.out.println();
+	    for(Map.Entry<Integer, String> ent : hm0.entrySet())
+	    {
+	    	System.out.println(ent.getKey()+"------------->"+ent.getValue());
+	    }
+	    
+	    
+	    
 	    
 	}
 

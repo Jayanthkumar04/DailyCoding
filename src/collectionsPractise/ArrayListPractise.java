@@ -142,6 +142,25 @@ System.out.println("11. Write a Java program to reverse elements in an array lis
   
   
   
+  
+  
+  
+  
+  System.out.println("HC");
+  
+  ArrayList<Integer> hc = new ArrayList<>();
+  
+  hc.add(4);hc.add(10);
+  
+  System.out.println(hc.size());
+  
+  hc.add(1,23);
+  
+  System.out.println(hc);
+  
+  
+  
+  
 	}
 
 }
