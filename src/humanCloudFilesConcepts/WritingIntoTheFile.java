@@ -13,7 +13,7 @@ public class WritingIntoTheFile {
 		try
 		{
 			
-			f.write("you are the best thing in the world");
+			f.write("written by jayy");
 			System.out.println("wrote successfully");
 		}
 		

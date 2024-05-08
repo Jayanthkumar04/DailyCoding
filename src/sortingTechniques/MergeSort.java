@@ -71,7 +71,7 @@ public class MergeSort {
 		
 		mergeSort(arr);
 		
-		System.out.println("AFTER SORT");
+		System.out.println("\nAFTER SORT");
 		print(arr);
 		
 	}

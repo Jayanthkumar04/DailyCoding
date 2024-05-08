@@ -1,6 +1,7 @@
 package collectionsPractise;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapPrac2 {
 
@@ -27,7 +28,6 @@ public class HashMapPrac2 {
 		
 		
 //		2. Write a Java program to count the number of key-value (size) mappings in a map.
-		
 		System.out.println("2. Write a Java program to count the number of key-value (size) mappings in a map.");
 		System.out.println(hm.size());
 		System.out.println();
@@ -170,6 +170,47 @@ System.out.println("============================================================
 
 String st ="hello world hello how r u u u how how how";
 
+String st2[]=st.split(" ");
+
+HashMap<String,Integer> st3 = new HashMap<>();
+
+for(int i=0;i<st2.length;i++)
+{
+	String keyy=st2[i];
+
+	if(st3.containsKey(keyy))
+	{
+		st3.put(keyy,st3.get(keyy)+1);
+	}
+	else
+	{
+		st3.put(keyy,1);
+	}
+	
+}
+
+System.out.println("repeat");
+System.out.println(st3);
+
+int mx=0;
+String anss=null;
+for(Map.Entry m:st3.entrySet())
+{
+	
+	if((int)m.getValue()>mx)
+	{
+		mx=(int)m.getValue();
+		
+		anss=(String)m.getKey();
+		
+		
+	}
+	
+	
+}
+System.out.println("most repeated is "+anss);
+
+
 
 HashMap<String,Integer> hmm1 = new HashMap<>();
 
@@ -192,15 +233,15 @@ for(String q : answer)
 }
 
 
-int mx = 0;
+int mxx = 0;
 
 String ans=null;
 
 for(String i : hmm1.keySet())
 {
-	if((hmm1.get(i))>mx)
+	if((hmm1.get(i))>mxx)
 	{
-		mx = hmm1.get(i);
+		mxx = hmm1.get(i);
 	    ans=i;
 	}
 	

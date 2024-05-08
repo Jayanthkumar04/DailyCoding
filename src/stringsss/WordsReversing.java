@@ -57,9 +57,11 @@ public class WordsReversing {
 
   }
 
-   reverse(sb,i,j-1);
-		
-		
+  
+  
+  
+        reverse(sb,i,j-1);
+        
 		System.out.println(sb);
 	}
 

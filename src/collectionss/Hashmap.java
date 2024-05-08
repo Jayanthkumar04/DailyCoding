@@ -13,6 +13,51 @@ public class Hashmap {
 
 		HashMap<Integer,String> hm = new HashMap<>();
 		
+		HashMap<Character,Integer> hm2 = new HashMap<>();
+		
+		
+		
+		String s1="aabcdeeefgh";
+		
+		for(int i=0;i<s1.length();i++)
+		{
+			char ch = s1.charAt(i);
+			
+			if(hm2.containsKey(ch))
+			{
+				
+				hm2.put(ch, hm2.get(ch)+1);
+				
+			}
+			
+			else
+			{
+				hm2.put(s1.charAt(i), 1);
+			}
+		}
+		System.out.println("ans now");
+		System.out.println(hm2);
+		
+		
+		
+		int mx = Integer.MIN_VALUE;
+		
+		char ans ='a';
+		for(Map.Entry mapp:hm2.entrySet())
+		{
+		
+			if((int)mapp.getValue() > mx)
+			{
+				ans=(char)mapp.getKey();
+				
+				mx=(int)mapp.getValue();
+			}
+			
+		}
+		System.out.println("most repeated letter is "+ans);
+		
+		
+		
 		hm.put(1,"jay");
 
 		hm.put(2,"hari");

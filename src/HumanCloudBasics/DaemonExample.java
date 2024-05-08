@@ -8,7 +8,7 @@ public void run()
 {
 	try
 	{
-		Thread t = new Thread();
+		Thread t = Thread.currentThread();
 		String name = t.getName();
 		
 		if(name.equals("typing"))
@@ -44,7 +44,7 @@ public void typingbro()throws Exception
 
 public void spellbro()throws Exception
 {
-	for(;;)
+	for( ; ; )
 	{
 		System.out.println("spell checking...");
 	    Thread.sleep(2000);
@@ -53,7 +53,7 @@ public void spellbro()throws Exception
 
 public void savebro()throws Exception
 {
-	for(;;)
+	for( ; ;)
 	{
 		System.out.println("auto saving...");
 	    Thread.sleep(2000);
@@ -78,8 +78,8 @@ public class DaemonExample {
 		m2.setDaemon(true);
 		m3.setDaemon(true);
 		
-		m2.setPriority(2);
-		m3.setPriority(3);
+		m2.setPriority(3);
+		m3.setPriority(2);
 		
 		m1.start();
 		m2.start();
