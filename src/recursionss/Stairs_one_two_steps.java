@@ -13,7 +13,7 @@ public class Stairs_one_two_steps {
 //		no.of ways climbing the stairrsssssssss
 		
 		
-		int ans = stairs(5);
+		int ans = stairs(4);
 		
 		System.out.println(ans);
 	}

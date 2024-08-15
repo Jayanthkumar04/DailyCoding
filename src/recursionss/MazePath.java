@@ -29,6 +29,7 @@ public class MazePath {
 	    
 	    return downway+rightway;
 	
+	    
 		
 	}
 	public static void main(String[] args) {
